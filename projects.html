@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-        <link href='main.css' rel='stylesheet' type='text/css'>
-    </head>
+<head>
+  <title>Projects</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='main.css' rel='stylesheet' type='text/css'>
+</head>
 
-    <body>
-        <div class="center">
-            <h1>Projects</h1>
-            <ul>
-                <li>
-                    <h3><a href="">JellyQuest</a></h3>
-                    <p>
-                        An in-progress iOS action game using Coconut. (Old sneak-peek gif below)
-                    </p>
-                        <iframe src="http://gfycat.com/ifr/GiantFittingJapanesebeetle" frameborder="0" scrolling="no" width="300" height="628" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/DarrenTsung/Coconut">Coconut</a></h3>
-                    <p>An objective-c entity-component library designed for use with <a href="http://www.cocos2d-swift.org/">cocos2d-swift.</a></p>
-                </li>
-                <li>
-                    <h3><a href="">Takeover</a></h3>
-                    <p>
-                    Fast-paced iOS strategy game. Similar to tug of war.
-                    <iframe src="http://gfycat.com/ifr/ImprobableCoolHorse" frameborder="0" scrolling="no" width="600" height="288" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/DarrenTsung/WorkTime">WorkTime</a></h3>
-                    <p>
-                    iOS application that reads in a database of state and federal tax brackets to compute how much you make per hour. Visualizes how much time at work an item will cost you. Now on the <a href="https://itunes.apple.com/us/app/worktime-$/id903751201?ls=1&mt=8">app store</a>!
-                    </p>
-                    <img src="./img/worktime-gif-1-resized.gif" alt="Worktime gif 1">
-                </li>
-                <li>
-                    <h3><a href="https://github.com/DarrenTsung/ocean-breeze">Perlin Noise Generator with Sin-wave Vertex Shader</a></h3>
-                    <p>
-                        Experimentation into basic shader code. Applies a sin function on the height of each individual vertex of a Perlin Noise surface.
-                        <img src="./img/perlin-noise-gif-1.gif" alt="Perlin-noise gif 1">
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/xkrogen/wuff">Wuff</a></h3>
-                    <p>
-                        Spontaneous event planning and invitation app. Developed over the course of the semester in a team of five.
-                        <img src="./img/wuff-screenshot-1.png" alt="Wuff screenshot 1">
-                        <img src="./img/wuff-screenshot-2.png" alt="Wuff screenshot 2">
-                        <img src="./img/wuff-gif-1.gif" alt="Wuff gif 1">
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="http://globalgamejam.org/2014/games/bread-crumbs">Breadcrumbs</a></h3>
-                    <p>
-                        Global Game Jam (GGJ2014) entry. Built in the span of two days with a team of four.
-                        <img src="./img/breadcrumbs_screenshot-1.jpg" alt="Breadcrumbs screenshot 1">
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/Kovath/raytracing">Raytracer</a></h3>
-                    <p>
-                        A raytracer implemented in C++. Does depth-of-field and texture modeling.
-                        <img src="./img/raytracer-screenshot-1.png" alt="Raytracer screenshot 1">
-                        <img src="./img/raytracer-screenshot-2.png" alt="Raytracer screenshot 2">
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/DarrenTsung/inverse-kinematics">Inverse Kinematics (IK) Solver</a></h3>
-                    <p>
-                    Finds solutions that arrange 4+ arm segments to reach a target.
-                    </p>
-                    <img src="./img/inverse-kinematics-gif-1.gif" alt="Inverse-Kinematics gif 1" height="400px" width="400px">
-                </li>
-                <li>
-                    <h3><a href="https://github.com/DarrenTsung/bezier-surfaces">Adaptive and Uniform Tessellation on a Bezier Surface</a></h3>
-                    <p>
-                        Implementation of algorithms to split a curved surface into triangles for rendering.
-                    </p>
-                    <img src="./img/Beizer-surfaces-gif-1.gif" alt="Bezier-surfaces gif 1" height="400px" width="400px">
-                </li>
-            </ul>
-        </div>
-    </body>
+<body>
+  <div class="center">
+    <h1>Projects</h1>
+    <ul>
+      <li>
+        <h3><a href="">Low Poly Ocean</a></h3>
+        <p>
+          Perlin noise shader + voronoi mesh points.
+        </p>
+        <img src="./img/low-poly-ocean-medium-density.gif" alt="Low Poly Ocean - Medium Density Gif">
+      </li>
+      <li>
+        <h3><a href="">Ascii Post Processing Effect</a></h3>
+        <p>
+          Post Processing Effect that reads in the rendered image, cuts it into tiles, and superimposes ascii images from a mapping based on the brightness of the tile.
+        </p>
+        <img width="618" height="315" src="./img/ascii-post-processing-effect.png" alt="Ascii Post Processing Effect">
+      </li>
+      <li>
+        <h3><a href="">Burn Shader</a></h3>
+        <p>
+          Burn shader based on a dissolve map and burn ramp.
+        </p>
+        <img src="./img/burn-shader.gif" alt="Burn Shader Gif">
+      </li>
+      <li>
+        <h3><a href="">Duck Untitled Project</a></h3>
+        <p>
+          Unfinisehd 2D Platformer. Built a complex loot system / database and editor in Unity.
+        </p>
+        <img width="628" height="353" src="./img/duck-project-loot-system.gif" alt="Duck Project Loot System Gif">
+        <img width="628" height="353" src="./img/duck-project-camera-movement.gif" alt="Duck Project Camera Movement Gif">
+      </li>
+      <li>
+        <h3><a href="">Hammer-Time</a></h3>
+        <p>
+          Developed with Unity for the Indies vs Gamers game jam. Play as a spaceship with a giant hammer and swing it around to destroy drones. Build up combos and try to beat your highest score!
+        </p>
+        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-1.gif" alt="Hammer-Time gameplay gif 1">
+        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-2.gif" alt="Hammer-Time gameplay gif 2">
+        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-3.gif" alt="Hammer-Time gameplay gif 3">
+      </li>
+      <li>
+        <h3><a href="">Swedish Redneck Adventure</a></h3>
+        <p>
+          Developed with Unity for the Epic Game Jam 2. Sneak up on a cow and try to tip it over, if it catches you moving then you lose!
+        </p>
+        <iframe src="http://gfycat.com/ifr/GiantFittingJapanesebeetle" frameborder="0" scrolling="no" width="300" height="628" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+      </li>
+      <li>
+        <h3><a href="">JellyQuest</a></h3>
+        <p>
+          An in-progress iOS action game using Coconut. (Old sneak-peek gif below)
+        </p>
+        <iframe src="http://gfycat.com/ifr/GiantFittingJapanesebeetle" frameborder="0" scrolling="no" width="300" height="628" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+      </li>
+      <li>
+        <h3><a href="https://github.com/DarrenTsung/Coconut">Coconut</a></h3>
+        <p>An objective-c entity-component library designed for use with <a href="http://www.cocos2d-swift.org/">cocos2d-swift.</a></p>
+      </li>
+      <li>
+        <h3><a href="">Takeover</a></h3>
+        <p>
+          Fast-paced iOS strategy game. Similar to tug of war.
+          <iframe src="http://gfycat.com/ifr/ImprobableCoolHorse" frameborder="0" scrolling="no" width="600" height="288" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+        </p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/DarrenTsung/WorkTime">WorkTime</a></h3>
+        <p>
+          iOS application that reads in a database of state and federal tax brackets to compute how much you make per hour. Visualizes how much time at work an item will cost you. Now on the <a href="https://itunes.apple.com/us/app/worktime-$/id903751201?ls=1&mt=8">app store</a>!
+        </p>
+        <img src="./img/worktime-gif-1-resized.gif" alt="Worktime gif 1">
+      </li>
+      <li>
+        <h3><a href="https://github.com/DarrenTsung/ocean-breeze">Perlin Noise Generator with Sin-wave Vertex Shader</a></h3>
+        <p>
+          Experimentation into basic shader code. Applies a sin function on the height of each individual vertex of a Perlin Noise surface.
+          <img src="./img/perlin-noise-gif-1.gif" alt="Perlin-noise gif 1">
+        </p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/xkrogen/wuff">Wuff</a></h3>
+        <p>
+          Spontaneous event planning and invitation app. Developed over the course of the semester in a team of five.
+          <img src="./img/wuff-screenshot-1.png" alt="Wuff screenshot 1">
+          <img src="./img/wuff-screenshot-2.png" alt="Wuff screenshot 2">
+          <img src="./img/wuff-gif-1.gif" alt="Wuff gif 1">
+        </p>
+      </li>
+      <li>
+        <h3><a href="http://globalgamejam.org/2014/games/bread-crumbs">Breadcrumbs</a></h3>
+        <p>
+          Global Game Jam (GGJ2014) entry. Built in the span of two days with a team of four.
+          <img src="./img/breadcrumbs_screenshot-1.jpg" alt="Breadcrumbs screenshot 1">
+        </p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Kovath/raytracing">Raytracer</a></h3>
+        <p>
+          A raytracer implemented in C++. Does depth-of-field and texture modeling.
+          <img src="./img/raytracer-screenshot-1.png" alt="Raytracer screenshot 1">
+          <img src="./img/raytracer-screenshot-2.png" alt="Raytracer screenshot 2">
+        </p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/DarrenTsung/inverse-kinematics">Inverse Kinematics (IK) Solver</a></h3>
+        <p>
+          Finds solutions that arrange 4+ arm segments to reach a target.
+        </p>
+        <img src="./img/inverse-kinematics-gif-1.gif" alt="Inverse-Kinematics gif 1" height="400px" width="400px">
+      </li>
+      <li>
+        <h3><a href="https://github.com/DarrenTsung/bezier-surfaces">Adaptive and Uniform Tessellation on a Bezier Surface</a></h3>
+        <p>
+          Implementation of algorithms to split a curved surface into triangles for rendering.
+        </p>
+        <img src="./img/Beizer-surfaces-gif-1.gif" alt="Bezier-surfaces gif 1" height="400px" width="400px">
+      </li>
+    </ul>
+  </div>
+</body>
 </html>
