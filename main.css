@@ -1,31 +1,53 @@
 body, html
 {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
-h1
+.sidebar-title
 {
-    margin: 20px 0px 0px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+.sidebar-subtitle
+{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 ul
 {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 a:link, a:visited
 {
-    color:#009ea3;
-    text-decoration: none;
+  color:#009ea3;
+  text-decoration: none;
+}
+
+.sidebar
+{
+  margin-top: 0px;
+  width: 200px;
+  float: left;
+  text-align: right;
+}
+
+.main
+{
+  margin-left:200px;
 }
 
 .center
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+  margin-top: 40px;
+  margin-left: 240px;
+  width: 70%;
 }
