@@ -9,6 +9,7 @@ document.write('\
       <a href="https://twitter.com/darrentsung"><img class="social-image" src="./img/social/twitter.png" alt="Twitter"></a>\
       <li><a href="projects.html">Projects</a></li>\
       <li><a href="writing.html">Writing</a></li>\
+      <li><a href="res/darrentsung_resume.pdf">Resume</a></li>\
     </ul>\
   </div>\
 \
