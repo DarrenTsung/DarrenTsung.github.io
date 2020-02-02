@@ -6,11 +6,62 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700' rel='stylesheet' type='text/css'>
   <link href='main.css' rel='stylesheet' type='text/css'>
   <style type="text/css">
+    #projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     #projects li {
-      padding: 20px;
-      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
       border: gray;
+      border-radius: 5px;
+
+      width: 40%;
+      min-width: 300px;
+      height: 410px;
+    }
+
+    .image {
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .image video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      margin: 10px;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .container-title h3,
+    i {
+      display: inline;
+      vertical-align: middle;
+    }
+
+    .container-title img {
+      vertical-align: middle;
+      height: 20px;
+      transition: all 0.5s ease 0s;
+      opacity: 0.5;
+    }
+
+    .container-title img:hover {
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -20,218 +71,386 @@
 </body>
 
 <body>
-  <div class="center" id="projects">
+  <div class="center">
     <h1>Projects</h1>
-    <ul>
+    <ul id="projects">
       <li>
-        <h3>PHASERBEAK</h3>
-        <p>
-          Fast-paced, local-multiplayer party game. Controls are simple to pick-up, but hard to master and every round
-          features a different mechanic.
-        </p>
-        <iframe src='https://gfycat.com/ifr/DesertedConcreteAlbacoretuna' frameborder='0' scrolling='no' width='640'
-          height='512' allowfullscreen></iframe>
+        <div class="image">
+          <video loop="" muted="" webkit-playsinline="" autoplay=""
+            poster="https://thumbs.gfycat.com/DesertedConcreteAlbacoretuna-mobile.jpg">Your
+            browser does not
+            support HTML5 video.
+            <source src="https://thumbs.gfycat.com/DesertedConcreteAlbacoretuna-mobile.mp4" type="video/mp4"></video>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>PHASERBEAK</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/laserbeak"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Fast-paced, local-multiplayer party game.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Unnamed Puzzle Prototype</h3>
-        <iframe src='https://gfycat.com/ifr/LeanTestyAnnelida' frameborder='0' scrolling='no' allowfullscreen
-          width='320' height='425'></iframe>
+        <div class="image">
+          <video loop="" muted="" webkit-playsinline="" autoplay=""
+            poster="https://thumbs.gfycat.com/LeanTestyAnnelida-mobile.jpg">Your browser does not
+            support HTML5 video.
+            <source src="https://thumbs.gfycat.com/LeanTestyAnnelida-mobile.mp4" type="video/mp4"></video>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Osmo SDK Puzzler</h3> <i>(C#, Unity3D)</i>
+          </div>
+          <p>
+            Built in 1 day as a proof-of-concept for the SDK I was building at Osmo (company).
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Jellyquest (reborn!)</h3>
-        <p>
-          Links:
-          <br>
-          <a href="https://forums.tigsource.com/index.php?topic=56606.0">Devlog</a>
-          <br>
-          <br>
-          Mobile arcade-y game with a meta-game twist made with Unity. Currently doing all game design, art,
-          programming, etc.
-        </p>
-        <img src="./img/ProductionArea-CustomerGrabbingDrinkAndFlyingCoin.gif"
-          alt="Production Area - Customers and Flying Coins">
-        <img src="./img/PufferReef-LevelBeginning.gif" alt="Puffer Reef - Level Beginning">
-        <img src="./img/PufferReef-PerfectWin.gif" alt="Puffer Reef - Perfect Win">
+        <div class="image">
+          <img src="./img/PufferReef-LevelBeginning.gif" alt="Puffer Reef - Level Beginning" height=300px>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Jellyquest (reborn!)</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://forums.tigsource.com/index.php?topic=56606.0"><img src="./img/icons/link.png"></a>
+          </div>
+          <p>
+            Mobile arcade-y game with a meta-game twist.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Finite Graph Machine</h3>
-        <p>
-          My attempt to build a Unity3D Editor Tool, inspired by the Animator.
-          <br>
-          <ul>
-            <li> - Supports multiple active nodes </li>
-            <li> - Complete separation of logic and editor </li>
-            <li> - Full test-suite </li>
-          </ul>
-          <br>
-          <a href="https://github.com/DarrenTsung/finite-graph-machine">Github Repository</a>
-        </p>
-        <img src="./img/finite-graph-machine.png" alt="Finite Graph Machine">
+        <div class="image">
+          <img src="./img/finite-graph-machine.png" alt="Finite Graph Machine">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Finite Graph Machine</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/finite-graph-machine"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            A Unity3D Editor Tool for building state machines, inspired by the Animator.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Dojo You Didn't!</h3>
-        <p>
-          Worked as programmer with artists <a href="https://twitter.com/Tedwilson79">Ted</a> and <a
-            href="https://twitter.com/siskavard">Corey</a>. 48-hour hackathon project for the Cartoon Network Game Jam
-          competing for $48,000 in total prize money. Turn-based rhythm fighter.
-          <br>
-          <br>
-          Placed in <b>top 5 out of 40+ teams</b>.
-        </p>
-        <img src="./img/dyd-StartAndColewortAOE.gif" alt="Start and Colewort AOE">
-        <img src="./img/dyd-KOAttackAndDefense.gif" alt="KO Attack and Defence">
+        <div class="image">
+          <img src="./img/dyd-StartAndColewortAOE.gif" alt="Start and Colewort AOE">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Dojo You Didn't!</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/cartoon-network-game-jam"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Hackathon project for Cartoon Network Game Jam, worked with artists <a
+              href="https://twitter.com/Tedwilson79">Ted</a> and <a href="https://twitter.com/siskavard">Corey</a>.
+            Placed <b>top 5 out of 40+ teams</b> with $48,000 prize pool.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Untitled Global Game Jam 2016 Project (VR)</h3>
-        <p>
-          48-hour Global Game Jam 2016 project. Play as a tribal musician and repeat the melody from the stars.
-          Developed with Unity and an Oculus Rift DK2.
-        </p>
-        <img src="./img/GGJ2016_VR_Gameplay1.gif" alt="GGJ2016 Gameplay 1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/B8jJPvnK4lc" frameborder="0"
-          allowfullscreen></iframe>
+        <div class="image">
+          <img src="./img/GGJ2016_VR_Gameplay1.gif" alt="GGJ2016 Gameplay 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Global Game Jam 2016</h3>
+            <i>(Unity3D, OculusSDK)</i>
+            <a href="https://github.com/DarrenTsung/GGJ2016"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            48-hour Global Game Jam 2016 project. Play as a tribal musician and repeat the melody from the stars.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>LAZERBEAK</h3>
-        <p>
-          24-hour hackathon project. 2-4 players play as minimalistic birds with lasers to fight to the last man
-          standing. <b>Voted audience choice</b>.
-        </p>
-        <img src="./img/LAZERBEAK-demo-gameplay-gif-1.gif" alt="LAZERBEAK demo gameplay gif 1">
+        <div class="image">
+          <img src="./img/LAZERBEAK-demo-gameplay-gif-1.gif" alt="LAZERBEAK demo gameplay gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>LAZERBEAK</h3>
+            <i>(C#, Unity3D)</i>
+          </div>
+          <p>
+            24-hour hackathon project. 2-4 players play as minimalistic birds with lasers to fight to the last man
+            standing. <b>Voted audience choice</b>.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Cloudface</h3>
-        <p>
-          Worked as programmer with two artists (<a href="https://twitter.com/Tedwilson79">Ted</a> and <a
-            href="https://twitter.com/siskavard">Corey</a>) on a 2D Platformer with cloud-based abilities. <b>Over
-            120,000+ views</b> on tigsource forums.
-        </p>
-        <img src="./img/cloudface-gameplay-gif-1.gif" alt="Cloudface - Gameplay Gif 1">
+        <div class="image">
+          <img src="./img/cloudface-gameplay-gif-1.gif" alt="Cloudface - Gameplay Gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Cloudface</h3>
+            <i>(C#, Unity3D)</i>
+          </div>
+          <p>
+            Worked as programmer with artists (<a href="https://twitter.com/Tedwilson79">Ted</a> and <a
+              href="https://twitter.com/siskavard">Corey</a>) on a 2D Platformer with cloud-based abilities. <b>Over
+              120,000+ views</b> on tigsource forums.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Low Poly Ocean</h3>
-        <p>
-          Perlin noise shader + voronoi mesh points.
-        </p>
-        <img src="./img/low-poly-ocean-medium-density.gif" alt="Low Poly Ocean - Medium Density Gif">
+        <div class="image">
+          <img src="./img/low-poly-ocean-medium-density.gif" alt="Low Poly Ocean - Medium Density Gif">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Low Poly Ocean</h3>
+            <i>(Unity3D, Shaders)</i>
+          </div>
+          <p>
+            Creates a low-poly ocean effect with a perlin noise shader + voronoi mesh points.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Ascii Post Processing Effect</h3>
-        <p>
-          Post Processing Effect that reads in the rendered image, cuts it into tiles, and superimposes ascii images
-          from a mapping based on the brightness of the tile.
-        </p>
-        <img width="618" height="315" src="./img/ascii-post-processing-effect.png" alt="Ascii Post Processing Effect">
+        <div class="image">
+          <img src="./img/ascii-post-processing-effect.png" alt="Ascii Post Processing Effect">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Ascii Post Processing Effect</h3>
+            <i>(Unity3D, Shaders)</i>
+            <a href="https://github.com/DarrenTsung/unity-ascii-post-processing-effect"><img
+                src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Shader that cuts rendered image into tiles, and superimposes ascii images
+            from a mapping based on the brightness of the tile.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Burn Shader</h3>
-        <p>
-          Burn shader based on a dissolve map and burn ramp.
-        </p>
-        <img src="./img/burn-shader.gif" alt="Burn Shader Gif">
+        <div class="image">
+          <img src="./img/burn-shader.gif" alt="Burn Shader Gif">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Burn Shader</h3>
+            <i>(Unity3D, Shaders)</i>
+            <a href="https://github.com/DarrenTsung/unity-burn-shader"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Burn shader based on a dissolve map and burn ramp.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Duck Untitled Project</h3>
-        <p>
-          Untitled 2D Platformer. Built a complex loot system / database and editor in Unity.
-        </p>
-        <img width="628" height="353" src="./img/duck-project-loot-system.gif" alt="Duck Project Loot System Gif">
-        <img width="628" height="353" src="./img/duck-project-camera-movement.gif"
-          alt="Duck Project Camera Movement Gif">
+        <div class="image">
+          <img src="./img/duck-project-loot-system.gif" alt="Duck Project Loot System Gif">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Duck Untitled Project</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/duckproject"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Untitled 2D Platformer. Built a complex loot system / database and editor in Unity.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Hammer-Time</h3>
-        <p>
-          Developed with Unity for the Indies vs Gamers game jam. Play as a spaceship with a giant hammer and swing it
-          around to destroy drones. Build up combos and try to beat your highest score!
-        </p>
-        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-1.gif" alt="Hammer-Time gameplay gif 1">
-        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-2.gif" alt="Hammer-Time gameplay gif 2">
-        <img width="600" height="336" src="./img/hammer-time-gameplay-gif-3.gif" alt="Hammer-Time gameplay gif 3">
+        <div class="image">
+          <img width="600" height="336" src="./img/hammer-time-gameplay-gif-1.gif" alt="Hammer-Time gameplay gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Hammer-Time</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/indies-vs-gamers"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Developed with Unity for the Indies vs Gamers game jam. Swing a giant hammer
+            around to destroy drones and build up combos!
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Swedish Redneck Adventure</h3>
-        <p>
-          Developed with Unity for the Epic Game Jam 2. Sneak up on a cow and try to tip it over, if it catches you
-          moving then you lose!
-        </p>
-        <img src="./img/cowtipping-adventure-gif-1.gif" alt="Cowtipping Adventure gameplay gif 1">
+        <div class="image">
+          <img src="./img/cowtipping-adventure-gif-1.gif" alt="Cowtipping Adventure gameplay gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Cowtipping Adventure</h3>
+            <i>(C#, Unity3D)</i>
+            <a href="https://github.com/DarrenTsung/epic-game-jam-2"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Developed with Unity for the Epic Game Jam 2. Sneak up on a cow and try to tip it over, if it catches you
+            moving then you lose!
+          </p>
+        </div>
       </li>
       <li>
-        <h3>JellyQuest</h3>
-        <p>
-          An iOS action game built with Coconut (custom entity-component-system framework) and cocos2D-objc.
-        </p>
-        <iframe src="http://gfycat.com/ifr/GiantFittingJapanesebeetle" frameborder="0" scrolling="no" width="300"
-          height="628" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"></iframe>
+        <div class="image">
+          <video loop="" muted="" webkit-playsinline="" autoplay=""
+            poster="https://thumbs.gfycat.com/GiantFittingJapanesebeetle-mobile.jpg">Your browser does not support HTML5
+            video.
+            <source src="https://thumbs.gfycat.com/GiantFittingJapanesebeetle-mobile.mp4" type="video/mp4"></video>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>JellyQuest</h3>
+            <i>(Objective-C, cocos2D)</i>
+          </div>
+          <p>
+            An iOS action game built with Coconut (custom entity-component-system framework) and cocos2D-objc.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Coconut</h3>
-        <p>An objective-c entity-component-system library designed for use with <a
-            href="http://www.cocos2d.org/#cocos2dobjc">cocos2d-objc.</a></p>
+        <div class="image">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Coconut</h3>
+            <i>(Objective-C, cocos2D)</i>
+            <a href="https://github.com/DarrenTsung/Coconut"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            An objective-c entity-component-system library designed for use with <a
+              href="http://www.cocos2d.org/#cocos2dobjc">cocos2d-objc.</a>
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Takeover</h3>
-        <p>
-          Fast-paced iOS strategy game. Similar to tug of war. Won 2nd place in semester long game making competition.
-        </p>
-        <iframe src="http://gfycat.com/ifr/ImprobableCoolHorse" frameborder="0" scrolling="no" width="600" height="288"
-          style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"></iframe>
+        <div class="image">
+          <video loop="" muted="" webkit-playsinline="" autoplay=""
+            poster="https://thumbs.gfycat.com/ImprobableCoolHorse-mobile.jpg">Your browser does not support HTML5 video.
+            <source src="https://thumbs.gfycat.com/ImprobableCoolHorse-mobile.mp4" type="video/mp4"></video>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Takeover</h3>
+            <i>(Objective-C, cocos2D)</i>
+            <a href="https://github.com/DarrenTsung/take-over"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Fast-paced iOS strategy game. Won <b>2nd place</b> in semester long game making competition with $4,500
+            prize pool.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>WorkTime</h3>
-        <p>
-          iOS application that reads in a database of state and federal tax brackets to compute how much you make per
-          hour. Visualizes how much time at work an item will cost you. Now on the <a
-            href="https://itunes.apple.com/us/app/worktime-$/id903751201?ls=1&mt=8">app store</a>!
-        </p>
-        <img src="./img/worktime-gif-1-resized.gif" alt="Worktime gif 1">
+        <div class="image">
+          <img src="./img/worktime-gif-1-resized.gif" alt="Worktime gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>WorkTime</h3>
+            <i>(Objective-C)</i>
+            <a href="https://github.com/DarrenTsung/WorkTime"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            iOS application that reads in a database of state and federal tax brackets to compute how much you make per
+            hour. Visualizes how much time at work an item will cost you.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Perlin Noise Generator with Sin-wave Vertex Shader</h3>
-        <p>
-          Experimentation into basic shader code. Applies a sin function on the height of each individual vertex of a
-          Perlin Noise surface.
-        </p>
-        <img src="./img/perlin-noise-gif-1.gif" alt="Perlin-noise gif 1">
+        <div class="image">
+          <img src="./img/perlin-noise-gif-1.gif" alt="Perlin-noise gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Low-fi Waves</h3>
+            <i>(C++, Shaders)</i>
+            <a href="https://github.com/DarrenTsung/ocean-breeze"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Experimentation into basic shader code. Applies a sin function on the height of each individual vertex of a
+            Perlin Noise surface.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Wuff</h3>
-        <p>
-          Spontaneous event planning and invitation app. Developed over the course of the semester in a team of five.
-        </p>
-        <img src="./img/wuff-screenshot-1.png" alt="Wuff screenshot 1">
-        <img src="./img/wuff-screenshot-2.png" alt="Wuff screenshot 2">
-        <img src="./img/wuff-gif-1.gif" alt="Wuff gif 1">
+        <div class="image">
+          <img src="./img/wuff-gif-1.gif" alt="Wuff gif 1">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Wuff</h3>
+            <i>(Objective-C)</i>
+          </div>
+          <p>
+            Spontaneous event planning and invitation iOS app. Developed over the course of the semester in a team of
+            five.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Breadcrumbs</h3>
-        <p>
-          Global Game Jam (GGJ2014) entry. Built in the span of two days with a team of four.
+        <div class="image">
           <img src="./img/breadcrumbs_screenshot-1.jpg" alt="Breadcrumbs screenshot 1">
-        </p>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Breadcrumbs</h3>
+            <i>(C#, Unity3D)</i>
+          </div>
+          <p>
+            Global Game Jam (GGJ2014) entry. Built in the span of two days with a team of four.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Raytracer</h3>
-        <p>
-          A raytracer implemented in C++. Does depth-of-field and texture modeling.
+        <div class="image">
           <img src="./img/raytracer-screenshot-1.png" alt="Raytracer screenshot 1">
-          <img src="./img/raytracer-screenshot-2.png" alt="Raytracer screenshot 2">
-        </p>
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Raytracer</h3>
+            <i>(C++)</i>
+          </div>
+          <p>
+            A raytracer implemented in C++. Does depth-of-field and texture modeling.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Inverse Kinematics (IK) Solver</h3>
-        <p>
-          Finds solutions that arrange 4+ arm segments to reach a target.
-        </p>
-        <img src="./img/inverse-kinematics-gif-1.gif" alt="Inverse-Kinematics gif 1" height="400px" width="400px">
+        <div class="image">
+          <img src="./img/inverse-kinematics-gif-1.gif" alt="Inverse-Kinematics gif 1" height="400px" width="400px">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Inverse Kinematics (IK) Solver</h3>
+            <i>(C++)</i>
+            <a href="https://github.com/DarrenTsung/inverse-kinematics"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Finds solutions that arrange 4+ arm segments to reach a target.
+          </p>
+        </div>
       </li>
       <li>
-        <h3>Adaptive and Uniform Tessellation on a Bezier Surface</h3>
+        <div class="image">
+          <img src="./img/Beizer-surfaces-gif-1.gif" alt="Bezier-surfaces gif 1" height="400px" width="400px">
+        </div>
+        <div class="container">
+          <div class="container-title">
+            <h3>Adaptive and Uniform Tessellation on a Bezier Surface</h3>
+            <i>(C++)</i>
+            <a href="https://github.com/DarrenTsung/bezier-surfaces"><img src="./img/social/github.png"></a>
+          </div>
+          <p>
+            Implementation of algorithms to split a curved surface into triangles for rendering.
+          </p>
+        </div>
         <p>
-          Implementation of algorithms to split a curved surface into triangles for rendering.
         </p>
-        <img src="./img/Beizer-surfaces-gif-1.gif" alt="Bezier-surfaces gif 1" height="400px" width="400px">
       </li>
     </ul>
   </div>
