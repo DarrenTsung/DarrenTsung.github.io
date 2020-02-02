@@ -10,16 +10,16 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     #projects li {
-      margin-right: 20px;
       margin-bottom: 40px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
       border: gray;
       border-radius: 5px;
 
-      width: 40%;
+      width: 48%;
       min-width: 300px;
       height: 410px;
     }
@@ -53,15 +53,20 @@
       vertical-align: middle;
     }
 
-    .container-title img {
+    .icon img {
       vertical-align: middle;
       height: 20px;
       transition: all 0.5s ease 0s;
       opacity: 0.5;
     }
 
-    .container-title img:hover {
+    .icon img:hover {
       opacity: 0.8;
+    }
+
+    #attribution {
+      height: 3em;
+      text-align: center;
     }
   </style>
 </head>
@@ -86,7 +91,7 @@
           <div class="container-title">
             <h3>PHASERBEAK</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/laserbeak"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/laserbeak"><img src="./img/social/github.png"></a>
           </div>
           <p>
             Fast-paced, local-multiplayer party game.
@@ -117,7 +122,8 @@
           <div class="container-title">
             <h3>Jellyquest (reborn!)</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://forums.tigsource.com/index.php?topic=56606.0"><img src="./img/icons/link.png"></a>
+            <a class="icon" href="https://forums.tigsource.com/index.php?topic=56606.0"><img
+                src="./img/icons/link.png"></a>
           </div>
           <p>
             Mobile arcade-y game with a meta-game twist.
@@ -132,7 +138,8 @@
           <div class="container-title">
             <h3>Finite Graph Machine</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/finite-graph-machine"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/finite-graph-machine"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             A Unity3D Editor Tool for building state machines, inspired by the Animator.
@@ -147,7 +154,8 @@
           <div class="container-title">
             <h3>Dojo You Didn't!</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/cartoon-network-game-jam"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/cartoon-network-game-jam"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Hackathon project for Cartoon Network Game Jam, worked with artists <a
@@ -164,7 +172,7 @@
           <div class="container-title">
             <h3>Global Game Jam 2016</h3>
             <i>(Unity3D, OculusSDK)</i>
-            <a href="https://github.com/DarrenTsung/GGJ2016"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/GGJ2016"><img src="./img/social/github.png"></a>
           </div>
           <p>
             48-hour Global Game Jam 2016 project. Play as a tribal musician and repeat the melody from the stars.
@@ -224,7 +232,7 @@
           <div class="container-title">
             <h3>Ascii Post Processing Effect</h3>
             <i>(Unity3D, Shaders)</i>
-            <a href="https://github.com/DarrenTsung/unity-ascii-post-processing-effect"><img
+            <a class="icon" href="https://github.com/DarrenTsung/unity-ascii-post-processing-effect"><img
                 src="./img/social/github.png"></a>
           </div>
           <p>
@@ -241,7 +249,8 @@
           <div class="container-title">
             <h3>Burn Shader</h3>
             <i>(Unity3D, Shaders)</i>
-            <a href="https://github.com/DarrenTsung/unity-burn-shader"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/unity-burn-shader"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Burn shader based on a dissolve map and burn ramp.
@@ -256,7 +265,7 @@
           <div class="container-title">
             <h3>Duck Untitled Project</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/duckproject"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/duckproject"><img src="./img/social/github.png"></a>
           </div>
           <p>
             Untitled 2D Platformer. Built a complex loot system / database and editor in Unity.
@@ -271,7 +280,8 @@
           <div class="container-title">
             <h3>Hammer-Time</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/indies-vs-gamers"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/indies-vs-gamers"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Developed with Unity for the Indies vs Gamers game jam. Swing a giant hammer
@@ -287,7 +297,8 @@
           <div class="container-title">
             <h3>Cowtipping Adventure</h3>
             <i>(C#, Unity3D)</i>
-            <a href="https://github.com/DarrenTsung/epic-game-jam-2"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/epic-game-jam-2"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Developed with Unity for the Epic Game Jam 2. Sneak up on a cow and try to tip it over, if it catches you
@@ -314,12 +325,13 @@
       </li>
       <li>
         <div class="image">
+          <img src="./img/upsplash/yancy-min-842ofHC6MaI-unsplash.jpg">
         </div>
         <div class="container">
           <div class="container-title">
             <h3>Coconut</h3>
             <i>(Objective-C, cocos2D)</i>
-            <a href="https://github.com/DarrenTsung/Coconut"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/Coconut"><img src="./img/social/github.png"></a>
           </div>
           <p>
             An objective-c entity-component-system library designed for use with <a
@@ -337,7 +349,7 @@
           <div class="container-title">
             <h3>Takeover</h3>
             <i>(Objective-C, cocos2D)</i>
-            <a href="https://github.com/DarrenTsung/take-over"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/take-over"><img src="./img/social/github.png"></a>
           </div>
           <p>
             Fast-paced iOS strategy game. Won <b>2nd place</b> in semester long game making competition with $4,500
@@ -353,7 +365,7 @@
           <div class="container-title">
             <h3>WorkTime</h3>
             <i>(Objective-C)</i>
-            <a href="https://github.com/DarrenTsung/WorkTime"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/WorkTime"><img src="./img/social/github.png"></a>
           </div>
           <p>
             iOS application that reads in a database of state and federal tax brackets to compute how much you make per
@@ -369,7 +381,7 @@
           <div class="container-title">
             <h3>Low-fi Waves</h3>
             <i>(C++, Shaders)</i>
-            <a href="https://github.com/DarrenTsung/ocean-breeze"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/ocean-breeze"><img src="./img/social/github.png"></a>
           </div>
           <p>
             Experimentation into basic shader code. Applies a sin function on the height of each individual vertex of a
@@ -428,7 +440,8 @@
           <div class="container-title">
             <h3>Inverse Kinematics (IK) Solver</h3>
             <i>(C++)</i>
-            <a href="https://github.com/DarrenTsung/inverse-kinematics"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/inverse-kinematics"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Finds solutions that arrange 4+ arm segments to reach a target.
@@ -443,7 +456,8 @@
           <div class="container-title">
             <h3>Adaptive and Uniform Tessellation on a Bezier Surface</h3>
             <i>(C++)</i>
-            <a href="https://github.com/DarrenTsung/bezier-surfaces"><img src="./img/social/github.png"></a>
+            <a class="icon" href="https://github.com/DarrenTsung/bezier-surfaces"><img
+                src="./img/social/github.png"></a>
           </div>
           <p>
             Implementation of algorithms to split a curved surface into triangles for rendering.
@@ -453,6 +467,10 @@
         </p>
       </li>
     </ul>
+
+    <div id="attribution">
+      <a href="attribution.html">Images from Upsplash.</a>
+    </div>
   </div>
 </body>
 
