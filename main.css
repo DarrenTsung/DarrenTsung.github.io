@@ -22,9 +22,9 @@ h1 {
 }
 
 #profile-pic {
-  width: 110px;
-  height: 110px;
-  clip-path: circle(55px at center);
+  width: 10vw;
+  height: 10vw;
+  clip-path: circle(5vw at center);
 }
 
 h3 {
@@ -54,18 +54,18 @@ a:link, a:visited {
 
 .sidebar {
   margin-top: 0px;
-  width: 215px;
+  width: 17vw;
   float: left;
   text-align: right;
 }
 
 .main {
-  margin-left:200px;
+  margin-left:30vw;
 }
 
 .center {
-  margin-top: 100px;
-  margin-left: 240px;
+  margin-top: 10vw;
+  margin-left: 20vw;
   width: 70%;
 }
 
